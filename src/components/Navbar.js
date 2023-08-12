@@ -28,8 +28,6 @@ const Navbar = () => {
         <ul className="nav-icons">
            {socailLinks.map((link)=> {
             const {id,href,icon} = link
-
-            console.log(icon)
              return(
               <li key={id}>
               <a href={href} target="_blank" className="nav-icon"
