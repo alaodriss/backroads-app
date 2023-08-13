@@ -1,9 +1,11 @@
 import React from 'react'
-import { pageLinks ,socailLinks } from '../data'
+import { socailLinks } from '../data'
+import PageLink from './PageLink'
+
 const Footer = () => {
   return (
     <footer className="section footer">
-    <ul className="footer-links">
+   {/*<ul className="footer-links">
     {
            pageLinks.map((link)=> {
             return(
@@ -13,7 +15,10 @@ const Footer = () => {
             )
            })
           }
-    </ul>
+        </ul>*/}
+        
+        <PageLink parentClass="footer-links" itemClass="footer-link" />
+
     <ul className="footer-icons">
 
     {socailLinks.map((link)=> {
